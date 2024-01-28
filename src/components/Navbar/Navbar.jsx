@@ -1,6 +1,7 @@
 import React from "react";
 import { IoSearchOutline } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
+import DarkMode from "./DarkMode";
 
 const menuLinks = [
   {
@@ -68,7 +69,11 @@ function Navbar() {
           </div>
           <div className="flex justify-between items-center gap-4">
             <div className="relative group hidden sm:block">
-              <input type="text" placeholder="Search" className="search-bar" />
+              <input
+                type="text"
+                placeholder="Search..."
+                className="search-bar"
+              />
               <IoSearchOutline className="text-xl text-gray-600 group-hover:text-primary dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-3 duration-200" />
             </div>
             <button className="relative p-3">
@@ -77,7 +82,9 @@ function Navbar() {
                 5
               </div>
             </button>
-            <div></div>
+            <div>
+              <DarkMode />
+            </div>
           </div>
         </div>
       </div>
