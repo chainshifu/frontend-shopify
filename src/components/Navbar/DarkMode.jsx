@@ -8,7 +8,7 @@ function DarkMode() {
   );
 
   const ele = document.documentElement;
-  //   access the html element
+  //   access the html document element
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
