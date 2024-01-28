@@ -42,7 +42,7 @@ function Navbar() {
             sm:text-3xl
             "
             >
-              Eshop
+              Shopify
             </a>
             <div className="hidden lg:block">
               <ul className="flex items-center gap-4">
