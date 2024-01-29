@@ -55,13 +55,13 @@ function Hero() {
                     <h1 className="text-2xl sm:text-3xl lg:text-2xl font-bold">
                       {data.subtitle}
                     </h1>
-                    <h1 className="text-4xl sm:text-4xl lg:text-6xl font-bold">
+                    <h1 className="text-4xl sm:text-4xl lg:text-6xl font-bold xl:mb-4">
                       {data.title}
                     </h1>
                     <h1 className="text-4xl sm:text-[60px] md:text-[80px] xl:text-[130px] uppercase font-bold text-white dark:text-white/5">
                       {data.title_1}
                     </h1>
-                    <div>
+                    <div className="lg:mt-4 xl:mt-[40px]">
                       <Button
                         text="Shop By Categories"
                         bgColor="bg-primary"
