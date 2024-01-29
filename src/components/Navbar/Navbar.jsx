@@ -1,6 +1,6 @@
 import React from "react";
 import { IoSearchOutline } from "react-icons/io5";
-import { FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart, FaCaretDown } from "react-icons/fa";
 import DarkMode from "./DarkMode";
 
 const menuLinks = [
@@ -23,6 +23,24 @@ const menuLinks = [
     id: 4,
     name: "Blogs",
     link: "/#blog",
+  },
+];
+
+const dropDownLinks = [
+  {
+    id: 1,
+    name: "Trending Products",
+    link: "/#",
+  },
+  {
+    id: 2,
+    name: "Best Selling",
+    link: "/#",
+  },
+  {
+    id: 3,
+    name: "Top Rated",
+    link: "/#",
   },
 ];
 
@@ -64,6 +82,41 @@ function Navbar() {
                     </a>
                   </li>
                 ))}
+                <li className="relative cursor-pointer group">
+                  <a
+                    href="#"
+                    className="flex items-center gap-[4px] font-semibold text-gray-500 dark:hover:text-white py-2"
+                  >
+                    Quick Links
+                    <span>
+                      <FaCaretDown className="group-hover:rotate-180 duration-300" />
+                    </span>
+                  </a>
+                  <div className="absolute z-[1000] hidden group-hover:block w-[200px] bg-white shadow-md rounded-md dark:bg-gray-900 p-2 dark:text-white">
+                    <ul className="space-y-2">
+                      {dropDownLinks.map((item, index) => (
+                        <li key={index}>
+                          <a
+                            href={item.link}
+                            className="
+                          text-gray-500
+                          dark:hover:text-white
+                          duration-200
+                          hover:bg-primary/20
+                          w-full
+                          inline-block
+                          rounded-md
+                          p-2
+                          font-semibold
+                          "
+                          >
+                            {item.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
