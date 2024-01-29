@@ -61,7 +61,7 @@ function Hero() {
                     <h1 className="text-4xl sm:text-[60px] md:text-[80px] xl:text-[130px] uppercase font-bold text-white dark:text-white/5">
                       {data.title_1}
                     </h1>
-                    <div className="lg:mt-4 xl:mt-[40px]">
+                    <div className="sm:mt-3 lg:mt-4 xl:mt-[40px]">
                       <Button
                         text="Shop By Categories"
                         bgColor="bg-primary"
@@ -75,7 +75,7 @@ function Hero() {
                         src={data.image}
                         alt=""
                         className="
-                    w-[300px] h-[300px] sm:h-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,0.4)] relative z-40
+                    w-[300px] h-[300px] sm:w-[450px] sm:h-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,0.4)] relative z-40
                     "
                       />
                     </div>
