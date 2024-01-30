@@ -14,7 +14,7 @@ function Category2() {
               <p className="mb-[2px] text-white">Enjoy</p>
               <p className="text-2xl mb-[2px] font-semibold">With</p>
               <p className="text-3xl lg:text-4xl font-bold mb-2 opacity-45">
-                Laptop
+                Play Station
               </p>
               <Button
                 text="Browse"
