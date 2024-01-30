@@ -5,12 +5,14 @@ import Category2 from "./components/Category/Category_2";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Services from "./components/Services/Services";
+import Headphone from "./assets/images/Headphone_banner.png";
+import Product from "./components/Product.jsx/Product";
 
 const BannerData = {
   discount: "30% OFF",
   title: "Fine Smile",
   date: "10 Jan to 28 Jan",
-  image: "https://pngfre.com/wp-content/uploads/Headphone-1-781x1024.png",
+  image: Headphone,
   subtitle: "Air Solo Bass",
   title_2: "Winter Sale",
   description:
@@ -27,6 +29,7 @@ function App() {
       <Category2 />
       <Services />
       <Banner bannerData={BannerData} />
+      <Product />
     </div>
   );
 }
