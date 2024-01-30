@@ -26,7 +26,7 @@ function Category2() {
               <img
                 src={Ps5}
                 alt=""
-                className="absolute w-[180px] sm:w-[300px] xl:w-[350px] -right-5 top-1/2 -translate-y-1/2"
+                className="absolute w-[180px] sm:w-[300px] xl:h-[320px] xl:w-[320px] -right-5 top-1/2 -translate-y-1/2"
               />
             </div>
           </div>
