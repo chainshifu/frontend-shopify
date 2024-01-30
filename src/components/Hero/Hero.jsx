@@ -24,7 +24,7 @@ const HeroData = [
     id: 3,
     image: Macbook,
     subtitle: "Beats Solo",
-    title: "Wireless",
+    title: "Branded",
     title_1: "Laptops",
   },
 ];
