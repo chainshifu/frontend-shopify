@@ -39,7 +39,10 @@ function Services() {
       <div className="container mt-10 md:my-12">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 gap-y-8">
           {serviceData.map((data) => (
-            <div className="flex flex-col items-start sm:flex-row gap-4">
+            <div
+              key={data.id}
+              className="flex flex-col items-start sm:flex-row gap-4"
+            >
               {data.icon}
               <div>
                 <h1 className="text-lg font-semibold">{data.title}</h1>
