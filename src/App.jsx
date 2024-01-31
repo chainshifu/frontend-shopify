@@ -11,6 +11,7 @@ import Product from "./components/Product.jsx/Product";
 import Banner2 from "./components/Banner/Banner2";
 import Blogs from "./components/Blog/Blogs";
 import Brands from "./components/Partners/Brands";
+import Footer from "./components/Footer/Footer";
 
 const BannerData = {
   discount: "30% OFF",
@@ -49,6 +50,7 @@ function App() {
       <Banner2 bannerData={BannerData_2} />
       <Blogs />
       <Brands />
+      <Footer />
     </div>
   );
 }
