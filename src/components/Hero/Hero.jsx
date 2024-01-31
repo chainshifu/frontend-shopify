@@ -29,7 +29,7 @@ const HeroData = [
   },
 ];
 
-function Hero() {
+function Hero({ handleOrderPopup }) {
   const settings = {
     dots: false,
     arrows: false,
@@ -61,7 +61,10 @@ function Hero() {
                     <h1 className="text-4xl sm:text-[60px] md:text-[80px] xl:text-[130px] uppercase font-bold text-white dark:text-white/5">
                       {data.title_1}
                     </h1>
-                    <div className="sm:mt-3 lg:mt-4 xl:mt-[40px]">
+                    <div
+                      className="sm:mt-3 lg:mt-4 xl:mt-[40px]"
+                      onClick={handleOrderPopup}
+                    >
                       <Button
                         text="Shop By Categories"
                         bgColor="bg-primary"
