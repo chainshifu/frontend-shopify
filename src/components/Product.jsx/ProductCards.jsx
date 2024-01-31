@@ -13,7 +13,7 @@ function ProductCards({ data }) {
                 alt=""
                 className="h-[200px] sm:h-[160px] lg:h-[220px] xl:h-[250px] w-[200px] xl:w-[250px] rounded-md object-cover object-center top-1/2 p-2"
               />
-              <div className="hidden group-hover:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full h-full justify-center items-center text-center group-hover:backdrop-blur-[1.5px]">
+              <div className="hidden group-hover:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full h-full justify-center items-center text-center group-hover:backdrop-blur-[1.5px] duration-300">
                 <Button
                   text={"Add To Cart"}
                   bgColor={"bg-primary"}
