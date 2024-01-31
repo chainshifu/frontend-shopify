@@ -1,6 +1,6 @@
 import React from "react";
 
-function Banner({ bannerData }) {
+function Banner({ bannerData, handleOrderPopup }) {
   return (
     <div className="min-h-[550px] flex justify-center items-center pt-5 pb-6">
       <div className="container">
@@ -30,7 +30,10 @@ function Banner({ bannerData }) {
             <p className="text-sm tracking-wide leading-5">
               {bannerData.description}
             </p>
-            <button className="bg-white text-primary w-[150px] py-2 px-4 rounded-md font-medium">
+            <button
+              className="bg-white text-primary w-[150px] py-2 px-4 rounded-md font-medium"
+              onClick={handleOrderPopup}
+            >
               Shop Now
             </button>
           </div>
