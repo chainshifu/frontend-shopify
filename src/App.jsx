@@ -54,7 +54,7 @@ function App() {
       <Services />
       <Banner bannerData={BannerData} handleOrderPopup={handleOrderPopup} />
       <Product />
-      <Banner2 bannerData={BannerData_2} />
+      <Banner2 bannerData={BannerData_2} handleOrderPopup={handleOrderPopup} />
       <Blogs />
       <Brands />
       <Footer />
