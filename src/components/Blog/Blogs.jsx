@@ -12,6 +12,7 @@ const BlogData = [
       "Choose between a 41mm or 45mm casing size. The 41mm version features a 352 x 420 pixel resolution display and is ideal for more petite wrists (with a diameter between between 5.12 and 7.87 inches). The 45mm version of the watch features 396 x 484 pixel resolution and is better suited to people with a wrist diameter between 5.51 and 9.95 inches. The size casing you choose also impacts the watch's weight, but not its functionality (aside from the slight display size difference).",
     published: "Jan 20, 2024 by Dilshad",
     image: Image_1,
+    aosDelay: "0",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const BlogData = [
       "Apple devices proved fast a long time ago. Many people purchase Apple laptops, tablets, and smartphones because they work uncompromisingly swiftly. In education, quick access to information is imperative, which is why Apple stands out. Students can launch anything in the blink of an eye, be it Zoom, Skype, or any other app.",
     published: "Jan 20, 2024 by Michael Fowler",
     image: Image_2,
+    aosDelay: "200",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ const BlogData = [
       "When you put on the headset, there’s a quick automatic eye adjustment that’s much quicker and more seamless than on something like the Quest Pro there are no manual dials or sliders for eye settings at all. Apple wouldn’t say anything specific about its field of view this long before launch, but I definitely saw black in my peripheral vision. The Vision Pro is not as totally immersive as the marketing videos would have you believe.",
     published: "Jan 20, 2024 by Nilay Patel",
     image: Image_3,
+    aosDelay: "400",
   },
 ];
 
@@ -38,7 +41,11 @@ function Blogs() {
         <Heading title="Recent News" subtitle="Explore Our Blogs" />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-4 md:gap-6 gap-y-6">
           {BlogData.map((data) => (
-            <div key={data.id}>
+            <div
+              data-aos="fade-up"
+              data-aos-delay={data.aosDelay}
+              key={data.id}
+            >
               <div className="mb-2 overflow-hidden rounded-2xl">
                 <img
                   src={data.image}
