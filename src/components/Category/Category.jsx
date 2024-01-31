@@ -4,7 +4,7 @@ import Earphone from "../../assets/images/earphone.png";
 import Watch from "../../assets/images/watch.png";
 import Macbook from "../../assets/images/macbook_pro.png";
 
-function Category() {
+function Category({ handleOrderPopup }) {
   return (
     <div className="py-8">
       <div className="container">
@@ -16,11 +16,13 @@ function Category() {
               <p className="text-3xl lg:text-4xl font-bold mb-2 opacity-20">
                 Earphone
               </p>
-              <Button
-                text="Browse"
-                bgColor="bg-primary"
-                textColor="text-white"
-              />
+              <div onClick={handleOrderPopup}>
+                <Button
+                  text="Browse"
+                  bgColor="bg-primary"
+                  textColor="text-white"
+                />
+              </div>
             </div>
             <div>
               <img
@@ -38,11 +40,13 @@ function Category() {
               <p className="text-3xl lg:text-4xl font-bold mb-2 opacity-45">
                 Gadget
               </p>
-              <Button
-                text="Browse"
-                bgColor="bg-white"
-                textColor="text-bgYellow"
-              />
+              <div onClick={handleOrderPopup}>
+                <Button
+                  text="Browse"
+                  bgColor="bg-white"
+                  textColor="text-bgYellow"
+                />
+              </div>
             </div>
             <div>
               <img
@@ -60,11 +64,13 @@ function Category() {
               <p className="text-3xl lg:text-4xl font-bold mb-2 opacity-45">
                 Laptop
               </p>
-              <Button
-                text="Browse"
-                bgColor="bg-white"
-                textColor="text-primary"
-              />
+              <div onClick={handleOrderPopup}>
+                <Button
+                  text="Browse"
+                  bgColor="bg-white"
+                  textColor="text-primary"
+                />
+              </div>
             </div>
             <div>
               <img

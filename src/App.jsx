@@ -49,8 +49,8 @@ function App() {
     <div className="bg-white dark:bg-gray-900 dark:text-white overflow-hidden">
       <Navbar handleOrderPopup={handleOrderPopup} />
       <Hero handleOrderPopup={handleOrderPopup} />
-      <Category />
-      <Category2 />
+      <Category handleOrderPopup={handleOrderPopup} />
+      <Category2 handleOrderPopup={handleOrderPopup} />
       <Services />
       <Banner bannerData={BannerData} />
       <Product />

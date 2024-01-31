@@ -4,7 +4,7 @@ import Ps5 from "../../assets/images/ps5.png";
 import Virtual from "../../assets/images/vr.png";
 import Speaker from "../../assets/images/speaker.png";
 
-function Category2() {
+function Category2({ handleOrderPopup }) {
   return (
     <div className="py-8">
       <div className="container">
@@ -16,11 +16,13 @@ function Category2() {
               <p className="text-3xl lg:text-4xl font-bold mb-2 opacity-45">
                 Play Station
               </p>
-              <Button
-                text="Browse"
-                bgColor="bg-primary"
-                textColor="text-white"
-              />
+              <div onClick={handleOrderPopup}>
+                <Button
+                  text="Browse"
+                  bgColor="bg-primary"
+                  textColor="text-white"
+                />
+              </div>
             </div>
             <div>
               <img
@@ -38,11 +40,13 @@ function Category2() {
               <p className="text-3xl lg:text-4xl font-bold mb-2 opacity-30">
                 Oculus
               </p>
-              <Button
-                text="Browse"
-                bgColor="bg-white"
-                textColor="text-bgGreen"
-              />
+              <div onClick={handleOrderPopup}>
+                <Button
+                  text="Browse"
+                  bgColor="bg-white"
+                  textColor="text-bgGreen"
+                />
+              </div>
             </div>
             <div>
               <img
@@ -60,11 +64,13 @@ function Category2() {
               <p className="text-3xl lg:text-4xl font-bold mb-2 opacity-30">
                 Speakers
               </p>
-              <Button
-                text="Browse"
-                bgColor="bg-white"
-                textColor="text-bgBlue"
-              />
+              <div onClick={handleOrderPopup}>
+                <Button
+                  text="Browse"
+                  bgColor="bg-white"
+                  textColor="text-bgBlue"
+                />
+              </div>
             </div>
             <div>
               <img
