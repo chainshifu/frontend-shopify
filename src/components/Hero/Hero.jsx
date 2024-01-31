@@ -52,18 +52,37 @@ function Hero({ handleOrderPopup }) {
               <div key={data.id}>
                 <div className="grid grid-cols-1 sm:grid-cols-2">
                   <div className="flex flex-col justify-center gap-4 sm:pl-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10">
-                    <h1 className="text-2xl sm:text-3xl lg:text-2xl font-bold">
+                    <h1
+                      data-aos="zoom-out"
+                      data-aos-duration="500"
+                      data-aos-once="true"
+                      className="text-2xl sm:text-3xl lg:text-2xl font-bold"
+                    >
                       {data.subtitle}
                     </h1>
-                    <h1 className="text-4xl sm:text-4xl lg:text-6xl font-bold xl:mb-4">
+                    <h1
+                      data-aos="zoom-out"
+                      data-aos-duration="500"
+                      data-aos-once="true"
+                      className="text-4xl sm:text-4xl lg:text-6xl font-bold xl:mb-4"
+                    >
                       {data.title}
                     </h1>
-                    <h1 className="text-4xl sm:text-[60px] md:text-[80px] xl:text-[130px] uppercase font-bold text-white dark:text-white/5">
+                    <h1
+                      data-aos="zoom-out"
+                      data-aos-duration="500"
+                      data-aos-once="true"
+                      className="text-4xl sm:text-[60px] md:text-[80px] xl:text-[130px] uppercase font-bold text-white dark:text-white/5"
+                    >
                       {data.title_1}
                     </h1>
                     <div
                       className="sm:mt-3 lg:mt-4 xl:mt-[40px]"
                       onClick={handleOrderPopup}
+                      data-aos="fade-up"
+                      data-aos-offset="0"
+                      data-aos-duration="500"
+                      data-aos-delay="300"
                     >
                       <Button
                         text="Shop By Categories"
@@ -73,7 +92,11 @@ function Hero({ handleOrderPopup }) {
                     </div>
                   </div>
                   <div className="order-1 sm:order-2">
-                    <div>
+                    <div
+                      className="relative z-10"
+                      data-aos="zoom-in"
+                      data-aos-once="true"
+                    >
                       <img
                         src={data.image}
                         alt=""
