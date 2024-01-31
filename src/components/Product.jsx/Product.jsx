@@ -73,13 +73,16 @@ const ProductData_2 = [
   },
 ];
 
-function Product() {
+function Product({ handleOrderPopup }) {
   return (
     <div>
       <div className="container">
         <Heading title="Our Products" subtitle="Explore Our Products" />
-        <ProductCards data={ProductData} />
-        <ProductCards2 data={ProductData_2} />
+        <ProductCards data={ProductData} handleOrderPopup={handleOrderPopup} />
+        <ProductCards2
+          data={ProductData_2}
+          handleOrderPopup={handleOrderPopup}
+        />
       </div>
     </div>
   );
