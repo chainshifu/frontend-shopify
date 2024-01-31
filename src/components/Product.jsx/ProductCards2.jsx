@@ -6,7 +6,12 @@ function ProductCards2({ data, handleOrderPopup }) {
     <div className="mb-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 place-items-center">
         {data.map((item) => (
-          <div key={item.id} className="group">
+          <div
+            data-aos="fade-down"
+            data-aos-delay={item.aosDelay}
+            key={item.id}
+            className="group"
+          >
             <div className="bg-gradient-to-r from-gray-400 to-gray-400 rounded-md relative">
               <img
                 src={item.image}
