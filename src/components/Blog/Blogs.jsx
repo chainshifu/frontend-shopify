@@ -39,7 +39,7 @@ function Blogs() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-4 md:gap-6 gap-y-6">
           {BlogData.map((data) => (
             <div key={data.id}>
-              <div className="mb-2 overflow-hidden">
+              <div className="mb-2 overflow-hidden rounded-2xl">
                 <img
                   src={data.image}
                   alt=""
