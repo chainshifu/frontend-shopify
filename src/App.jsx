@@ -12,6 +12,8 @@ import Banner2 from "./components/Banner/Banner2";
 import Blogs from "./components/Blog/Blogs";
 import Brands from "./components/Partners/Brands";
 import Footer from "./components/Footer/Footer";
+import { useState } from "react";
+import OrderPopup from "./components/PopUp/OrderPopup";
 
 const BannerData = {
   discount: "30% OFF",
@@ -38,9 +40,14 @@ const BannerData_2 = {
 };
 
 function App() {
+  const [order, setOrder] = useState(false);
+
+  const handleOrderPopup = () => {
+    setOrder(!order);
+  };
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white overflow-hidden">
-      <Navbar />
+      <Navbar handleOrderPopup={handleOrderPopup} />
       <Hero />
       <Category />
       <Category2 />
@@ -51,6 +58,7 @@ function App() {
       <Blogs />
       <Brands />
       <Footer />
+      <OrderPopup order={order} handleOrderPopup={handleOrderPopup} />
     </div>
   );
 }
