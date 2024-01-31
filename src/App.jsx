@@ -10,6 +10,7 @@ import Watch from "./assets/images/apple_watch_banner_2.png";
 import Product from "./components/Product.jsx/Product";
 import Banner2 from "./components/Banner/Banner2";
 import Blogs from "./components/Blog/Blogs";
+import Brands from "./components/Partners/Brands";
 
 const BannerData = {
   discount: "30% OFF",
@@ -47,6 +48,7 @@ function App() {
       <Product />
       <Banner2 bannerData={BannerData_2} />
       <Blogs />
+      <Brands />
     </div>
   );
 }
