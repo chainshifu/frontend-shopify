@@ -9,7 +9,10 @@ function Brands() {
   return (
     <div className=" hidden md:block bg-gray-200 dark:bg-white/10 py-7 mt-20">
       <div className="container">
-        <div className="grid grid-cols-5 gap-3 place-items-center opa">
+        <div
+          data-aos="zoom-out"
+          className="grid grid-cols-5 gap-3 place-items-center opa"
+        >
           <img src={Brand_1} alt="" className="w-[80px] dark:invert" />
           <img src={Brand_2} alt="" className="w-[80px] dark:invert" />
           <img src={Brand_3} alt="" className="w-[80px] dark:invert" />
